@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neon Mini Golf</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Neon Mini Golf</p>
+        <h1>Precision Putt</h1>
+      </div>
+      <div class="stats" aria-label="Game status">
+        <span>Level <strong id="levelText">1</strong></span>
+        <span>Strokes <strong id="strokeText">0</strong></span>
+      </div>
+    </header>
+
+    <section class="game-panel" aria-label="Mini golf course">
+      <canvas id="gameCanvas" width="960" height="600" aria-label="Mini golf game canvas"></canvas>
+
+      <div id="messageBox" class="message-box hidden" role="status" aria-live="polite">
+        <h2 id="messageTitle">Nice shot!</h2>
+        <p id="messageText">Ready for the next level?</p>
+      </div>
+
+      <div id="pauseMenu" class="pause-menu hidden" role="dialog" aria-modal="true" aria-labelledby="pauseTitle">
+        <h2 id="pauseTitle">Paused</h2>
+        <p>Take a breath, line it up, then get back to the green.</p>
+        <div class="menu-actions">
+          <button id="resumeBtn" type="button">Resume</button>
+          <button id="pauseRestartBtn" type="button">Restart Level</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Game controls">
+      <div class="power-wrap">
+        <span>Power</span>
+        <div class="power-meter" aria-hidden="true">
+          <div id="powerFill"></div>
+        </div>
+      </div>
+
+      <div class="button-row">
+        <button id="restartBtn" type="button">Restart</button>
+        <button id="pauseBtn" type="button">Pause</button>
+        <button id="nextBtn" type="button">Next Level</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
