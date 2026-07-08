@@ -63,4 +63,7 @@ Contributions are welcome! If you want to design new levels, fine-tune the bounc
 4.Push to the Branch (git push origin feature/NewObstacles)
 5.Open a Pull Request
 
+👤 Author
+KS22-bot - GitHub Profile
 
+⭐ If you enjoyed aiming for a hole-in-one, drop a star on this repository!
