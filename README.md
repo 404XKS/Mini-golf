@@ -48,13 +48,6 @@ You only need a modern web browser (such as Chrome, Firefox, Safari, or Edge).
 1.Navigate into the directory:cd Mini-golf
 2.Launch the game:Simply open index.html in your favorite web browser, or use the Live Server extension in VS Code.
 
-##📂 Project Structure
-Mini-golf/
-│
-├── index.html    # Game canvas wrapper and page structure
-├── style.css     # Dark/neon arcade styling
-└── script.js     # Physics engine, level maps, and drawing loops
-
 🤝 Contributing
 Contributions are welcome! If you want to design new levels, fine-tune the bounce physics, or add sound effects:
 1.Fork the Project
